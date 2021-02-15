@@ -47,6 +47,9 @@ select f.title, fl.category from film f
 join film_list fl on fl.title = f.title
 group by fl.category;
 
+-- 17. List all movies featuring a robot.
+select * from film where deScription like '%ROBOT%';
+
 -- 18. How many movies were released in 2010?
 SELECT * FROM FILM WHERE RELEASE_YEAR = 2010;
 
