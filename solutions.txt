@@ -63,7 +63,7 @@ select first_name, last_name from staff where staff_id=2;
 select title from film_list where actors like '%Fred Costner%';
 
 -- 22. How many distinct countries are there?
-select distinct country from country;
+select count(distinct country) from country;
 
 -- 23. List the name of every language in reverse-alphabetical order.
 select name from language order by name desc;
